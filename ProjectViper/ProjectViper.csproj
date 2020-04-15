@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F736E733-D602-46E6-95D0-A618617C7CC0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectViper</RootNamespace>
+    <AssemblyName>ProjectViper</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>skull.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ProjectViper.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="a3main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="a3main.Designer.cs">
+      <DependentUpon>a3main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alpha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alpha.Designer.cs">
+      <DependentUpon>Alpha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attempt1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attempt1.Designer.cs">
+      <DependentUpon>attempt1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attempt3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attempt3.Designer.cs">
+      <DependentUpon>attempt3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attempt4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attempt4.Designer.cs">
+      <DependentUpon>attempt4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attempt5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attempt5.Designer.cs">
+      <DependentUpon>attempt5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attempt6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attempt6.Designer.cs">
+      <DependentUpon>attempt6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blackmarket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blackmarket.Designer.cs">
+      <DependentUpon>blackmarket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bsod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bsod.Designer.cs">
+      <DependentUpon>bsod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="decoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="decoy.Designer.cs">
+      <DependentUpon>decoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="decoy2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="decoy2.Designer.cs">
+      <DependentUpon>decoy2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="error403.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="error403.Designer.cs">
+      <DependentUpon>error403.cs</DependentUpon>
+    </Compile>
+    <Compile Include="error404.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="error404.Designer.cs">
+      <DependentUpon>error404.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lifeinserenity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lifeinserenity.Designer.cs">
+      <DependentUpon>lifeinserenity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="merciful.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="merciful.Designer.cs">
+      <DependentUpon>merciful.cs</DependentUpon>
+    </Compile>
+    <Compile Include="omen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="omen.Designer.cs">
+      <DependentUpon>omen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="origins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origins.Designer.cs">
+      <DependentUpon>origins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seized.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seized.Designer.cs">
+      <DependentUpon>seized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spam1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spam1.Designer.cs">
+      <DependentUpon>spam1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spam2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spam2.Designer.cs">
+      <DependentUpon>spam2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spam3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spam3.Designer.cs">
+      <DependentUpon>spam3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spam4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spam4.Designer.cs">
+      <DependentUpon>spam4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spam5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spam5.Designer.cs">
+      <DependentUpon>spam5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wincodescreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wincodescreen.Designer.cs">
+      <DependentUpon>wincodescreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="winscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="winscreen.Designer.cs">
+      <DependentUpon>winscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zero.Designer.cs">
+      <DependentUpon>zero.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="a3main.resx">
+      <DependentUpon>a3main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alpha.resx">
+      <DependentUpon>Alpha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attempt1.resx">
+      <DependentUpon>attempt1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attempt3.resx">
+      <DependentUpon>attempt3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attempt4.resx">
+      <DependentUpon>attempt4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attempt5.resx">
+      <DependentUpon>attempt5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attempt6.resx">
+      <DependentUpon>attempt6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blackmarket.resx">
+      <DependentUpon>blackmarket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bsod.resx">
+      <DependentUpon>bsod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="decoy.resx">
+      <DependentUpon>decoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="decoy2.resx">
+      <DependentUpon>decoy2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="error403.resx">
+      <DependentUpon>error403.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="error404.resx">
+      <DependentUpon>error404.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lifeinserenity.resx">
+      <DependentUpon>lifeinserenity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="merciful.resx">
+      <DependentUpon>merciful.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="omen.resx">
+      <DependentUpon>omen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="origins.resx">
+      <DependentUpon>origins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="seized.resx">
+      <DependentUpon>seized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spam1.resx">
+      <DependentUpon>spam1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spam2.resx">
+      <DependentUpon>spam2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spam3.resx">
+      <DependentUpon>spam3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spam4.resx">
+      <DependentUpon>spam4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spam5.resx">
+      <DependentUpon>spam5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wincodescreen.resx">
+      <DependentUpon>wincodescreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winscreen.resx">
+      <DependentUpon>winscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zero.resx">
+      <DependentUpon>zero.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adidasstripes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blckbackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dankeem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a4afterminimized.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a5background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a5background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoyspook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\josheyebleed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pv_spamimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pv_spamimage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pv_spamimage3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wraith.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lockscreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3redo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadinggif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadinggif2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiment5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadinggif3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiment51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiment3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiment6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiment.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiment2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiment4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiment7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbi3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbi4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbi5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finala3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\errorprovider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wraith2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spook.jpg" />
+    <None Include="Resources\healthwarning.png" />
+    <None Include="Resources\creepyforest.jpg" />
+    <Content Include="Resources\morespookymusic2.wav" />
+    <None Include="Resources\zero.jpg" />
+    <None Include="Resources\retard.PNG" />
+    <None Include="Resources\retard1.jpg" />
+    <None Include="Resources\retard3.jpg" />
+    <None Include="Resources\retard31.jpg" />
+    <None Include="Resources\retard4.jpg" />
+    <None Include="Resources\omenbackground.jpg" />
+    <Content Include="skull.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
