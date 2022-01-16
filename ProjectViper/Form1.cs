@@ -33,7 +33,11 @@ namespace ProjectViper
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Project Viper is a remake of a horror puzzle game I made a year ago called 'Virus'. It was a dull advertisement-simulator application designed to fool the player and potentially crash their operating system by simply executing a few lines of code that allowed for rapid pop-up window replication. Unlike Virus, this game tests your level of focus and brain processing, and it wasn't created for comedic purposes. It is simply an evolution of the concept of Virus, with the implication of ordinary horror components. The premise of the game revolves around the exposure of freakish, unconventional, and unintuitive user interface. Meaning you are entering this experiment blind, and the only way to move on is to learn from trial and error. It is up to the player to feel and distinguish between what is important and what is there just to scare you. As you progress, further instructions will be provided.");
+            MessageBox.Show("Project Viper is a remake of a short windows form app I made many years ago. It was an advertisement lookalike application that I experimented with when learning how to utilize loops in C#. In short, " +  
+                "with just a few lines, I created this pseudo computer virus that would open dozens of windows a second. One day, when I was in the 9th grade, I had the silly idea to reinvent this advertisement simulator app, but this time I would utilize every " +
+                "tool offered to me by the windows forms framework. Unlike the pseudo virus, this is, of course, a game, not just a silly experiment. However, your level of focus and ability to think quick on the spot will be tested. You can call it an evolution of the pseudo virus app, " +
+                "with the addition of ordinary horror components. The premise of the game revolves around the exposure of freakish, unconventional, and very unintuitive user interface. Meaning you are entering this experiment blind, and the only way to move on " +
+                "is to learn from trial and error. It is up to the player to feel and distinguish between what is important and what is there just to scare you. As you progress, further instructions will be provided.");
         }
 
         private void button1_MouseDown(object sender, MouseEventArgs e)
@@ -149,14 +153,14 @@ namespace ProjectViper
         {
             if (a1textbox.Text == "")
             {
-                label16.Text = "You have typed nothing";
+                label16.Text = "You typed nothing";
                 label16.Visible = true;
             }
             else
             {
                 textboxValue = a1textbox.Text;
                 label16.Visible = true;
-                label16.Text = String.Format("You have typed '{0}'", textboxValue);
+                label16.Text = String.Format("You typed '{0}'", textboxValue);
             }
         }
 

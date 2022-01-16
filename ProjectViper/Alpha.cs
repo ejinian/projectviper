@@ -73,7 +73,7 @@ namespace ProjectViper
             opening5.Text = "Game";
             disappear.Enabled = true;
             game.Enabled = false;
-            label1.Text = "The Art of Observation";
+            label1.Text = "Lobby";
             label2.Text = "Winning is an illusion";
             label3.Text = "Winning is an illusion";
             label4.Text = "Winning is an illusion";
@@ -217,11 +217,8 @@ namespace ProjectViper
                 log.ForeColor = Color.MediumBlue;
                 a1textbox.Text = "";
                 linkLabel1.Text = "CLICK ME";
-                string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                string directory = Path.GetDirectoryName(path);
-                path = Path.Combine(directory, "laugh.wav");
-                System.Media.SoundPlayer sound = new System.Media.SoundPlayer(path);
-                sound.Play();
+                System.Media.SoundPlayer begin = new System.Media.SoundPlayer(@"X:\ER-Audacitated\laugh.wav");
+                begin.Play();
                 wellDone.Text = "ACCESS GRANTED";
                 label20.Text = "Thank you for choosing us.";
                 a1textbox.Visible = false;
@@ -256,11 +253,8 @@ namespace ProjectViper
                 dt = DateTime.Now;
                 log.Text += dt.ToShortTimeString() + " - Attempt #3 requested.\n";
                 log.ForeColor = Color.MediumBlue;
-                string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                string directory = Path.GetDirectoryName(path);
-                path = Path.Combine(directory, "defenddryer.wav");
-                System.Media.SoundPlayer sound = new System.Media.SoundPlayer(path);
-                sound.Play();
+                System.Media.SoundPlayer begin = new System.Media.SoundPlayer(@"X:\ER-Audacitated\defenddryer.wav");
+                begin.Play();
                 a2textbox.Text = "";
                 rememberProgress.Text = "Verifying installation..";
                 attempt1.Enabled = false;
@@ -480,11 +474,8 @@ namespace ProjectViper
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("http://127.0.0.1/Chapters/unknown/pv.html");
-            string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            string directory = Path.GetDirectoryName(path);
-            path = Path.Combine(directory, "white_face2.wav");
-            System.Media.SoundPlayer sound = new System.Media.SoundPlayer(path);
-            sound.PlayLooping();
+            System.Media.SoundPlayer begin = new System.Media.SoundPlayer(@"X:\ER-Audacitated\white_face4.wav");
+            begin.PlayLooping();
         }
 
         private void a3timer_Tick(object sender, EventArgs e)
@@ -998,11 +989,8 @@ namespace ProjectViper
                     dt = DateTime.Now;
                     log.Text += dt.ToShortTimeString() + " - Attempt #3 requested.\n";
                     log.ForeColor = Color.MediumBlue;
-                    string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                    string directory = Path.GetDirectoryName(path);
-                    path = Path.Combine(directory, "defenddryer.wav");
-                    System.Media.SoundPlayer sound = new System.Media.SoundPlayer(path);
-                    sound.Play();
+                    System.Media.SoundPlayer begin = new System.Media.SoundPlayer(@"X:\ER-Audacitated\defenddryer.wav");
+                    begin.Play();
                     a2textbox.Text = "";
                     rememberProgress.Text = "Verifying installation..";
                     attempt1.Enabled = false;

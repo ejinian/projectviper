@@ -112,7 +112,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(298, 168);
+            this.label5.Location = new System.Drawing.Point(187, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 24);
             this.label5.TabIndex = 6;
@@ -140,7 +140,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label8.Location = new System.Drawing.Point(299, 163);
+            this.label8.Location = new System.Drawing.Point(321, 163);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 29);
             this.label8.TabIndex = 9;
@@ -158,11 +158,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("OCR A Extended", 100F, System.Drawing.FontStyle.Bold);
+            this.label10.Font = new System.Drawing.Font("Poor Richard", 99.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Red;
             this.label10.Location = new System.Drawing.Point(368, 163);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 139);
+            this.label10.Size = new System.Drawing.Size(0, 150);
             this.label10.TabIndex = 11;
             this.toolTip2.SetToolTip(this.label10, "Remember me");
             // 
@@ -223,7 +223,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(877, 474);
+            this.ClientSize = new System.Drawing.Size(873, 470);
             this.ControlBox = false;
             this.Controls.Add(this.escapefailure2);
             this.Controls.Add(this.escapefailure);

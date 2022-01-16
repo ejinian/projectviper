@@ -132,7 +132,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Sans Typewriter", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(562, 9);
+            this.label1.Location = new System.Drawing.Point(1049, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 109);
             this.label1.TabIndex = 0;
@@ -213,7 +213,7 @@
             // 
             this.opening4.AutoSize = true;
             this.opening4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.opening4.ForeColor = System.Drawing.Color.Red;
+            this.opening4.ForeColor = System.Drawing.Color.Black;
             this.opening4.Location = new System.Drawing.Point(1196, 419);
             this.opening4.Name = "opening4";
             this.opening4.Size = new System.Drawing.Size(0, 29);
