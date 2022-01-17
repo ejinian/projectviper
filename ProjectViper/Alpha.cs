@@ -217,8 +217,11 @@ namespace ProjectViper
                 log.ForeColor = Color.MediumBlue;
                 a1textbox.Text = "";
                 linkLabel1.Text = "CLICK ME";
-                System.Media.SoundPlayer begin = new System.Media.SoundPlayer(@"X:\ER-Audacitated\laugh.wav");
-                begin.Play();
+                string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                string directory = Path.GetDirectoryName(path);
+                path = Path.Combine(directory, "laugh.wav");
+                System.Media.SoundPlayer sound = new System.Media.SoundPlayer(path);
+                sound.Play();
                 wellDone.Text = "ACCESS GRANTED";
                 label20.Text = "Thank you for choosing us.";
                 a1textbox.Visible = false;

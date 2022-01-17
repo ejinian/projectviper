@@ -77,8 +77,11 @@ namespace ProjectViper
             button2.Enabled = false;
             button3.Enabled = false;
             label1.ForeColor = Color.Red;
-            System.Media.SoundPlayer begin = new System.Media.SoundPlayer(@"X:\ER-Audacitated\halt.wav");
-            begin.Play();
+            string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string directory = Path.GetDirectoryName(path);
+            path = Path.Combine(directory, "halt.wav");
+            System.Media.SoundPlayer sound = new System.Media.SoundPlayer(path);
+            sound.PlayLooping();
             label7.Text = "Learn the components";
             label7.ForeColor = Color.Red;
             label8.Visible = false;
@@ -167,8 +170,11 @@ namespace ProjectViper
         private void timer3_Tick(object sender, EventArgs e)
         {
             timer3.Stop();
-            System.Media.SoundPlayer begin = new System.Media.SoundPlayer(@"X:\ER-Audacitated\morespookymusic2.wav");
-            begin.Play();
+            string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string directory = Path.GetDirectoryName(path);
+            path = Path.Combine(directory, "morespookymusic2.wav");
+            System.Media.SoundPlayer sound = new System.Media.SoundPlayer(path);
+            sound.PlayLooping();
         }
 
         private void timer4_Tick(object sender, EventArgs e)
