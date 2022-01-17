@@ -167,11 +167,11 @@ namespace ProjectViper
         private void timer3_Tick(object sender, EventArgs e)
         {
             timer3.Stop();
-            string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            string directory = Path.GetDirectoryName(path);
-            path = Path.Combine(directory, "morespookymusic2.wav");
-            System.Media.SoundPlayer sound = new System.Media.SoundPlayer(path);
-            sound.PlayLooping();
+            //string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            //string directory = Path.GetDirectoryName(path);
+            //path = Path.Combine(directory, "morespookymusic2.wav");
+            //System.Media.SoundPlayer sound = new System.Media.SoundPlayer(path);
+            //sound.PlayLooping();
         }
 
         private void timer4_Tick(object sender, EventArgs e)
